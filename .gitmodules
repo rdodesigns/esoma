@@ -1,3 +1,6 @@
 [submodule "esoma_2011"]
 	path = esoma_2011
 	url = git://github.com/rdodesigns/esoma_2011.git
+[submodule "dps"]
+	path = dps
+	url = https://github.com/rdodesigns/Esoma-Data-Processor
