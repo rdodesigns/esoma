@@ -1,0 +1,96 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:indivo="http://indivo.org/vocab/xml/documents#" targetNamespace="http://indivo.org/vocab/xml/documents#" elementFormDefault="qualified">
+	<element name="ExercisePlan">
+		<complexType>
+			<sequence>
+				<element name="exerciseGroup">
+					<complexType>
+						<sequence>
+							<element name="sets" minOccurs="0" maxOccurs="1">
+								<complexType>
+									<sequence>
+										<element name="minimumValue" type="int" minOccurs="1" maxOccurs="1" />
+										<element name="maximumValue" type="int" minOccurs="0" maxOccurs="1" />
+									</sequence>
+								</complexType>
+							</element>
+							
+							<!-- Note: This will be replaced by scheduled item in final schema -->
+							<element name="daysOfWeek" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="exercise" minOccurs="1">
+								<complexType>
+									<sequence>
+									
+										<!-- Note: This will be replaced by separate object in final schema -->
+										<element name="activity">
+											<complexType>
+												<sequence>
+													<element name="id" type="string" minOccurs="1" maxOccurs="1" />
+													<element name="type" type="string" minOccurs="1" maxOccurs="1" />
+													<element name="name" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="orderedBy" type="string" minOccurs="0" maxOccurs="1" />
+										<element name="orderDate" type="date" minOccurs="0" maxOccurs="1" />
+										<element name="startTime" type="date" minOccurs="0" maxOccurs="1" />
+										<element name="duration" type="int" minOccurs="0" maxOccurs="1" />
+										<element name="sets" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="minimumValue" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="maximumValue" type="int" minOccurs="0" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="repititions" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="minimumValue" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="maximumValue" type="int" minOccurs="0" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="resistance" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="minimumValue" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="maximumValue" type="int" minOccurs="0" maxOccurs="1" />
+													<element name="unitOfMeasurement" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="distance" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="minimumValue" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="maximumValue" type="int" minOccurs="0" maxOccurs="1" />
+													<element name="unitOfMeasurement" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="additionalDetails" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="detail" minOccurs="0">
+														<complexType>
+															<sequence>
+																<element name="name" type="string" minOccurs="1" maxOccurs="1" />
+																<element name="minimuValue" type="int" minOccurs="1" maxOccurs="1" />
+																<element name="maximuValue" type="int" minOccurs="0" maxOccurs="1" />
+																<element name="unitOfMeasurement" type="string" minOccurs="0" maxOccurs="1" />
+															</sequence>
+														</complexType>
+													</element>
+												</sequence>
+											</complexType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

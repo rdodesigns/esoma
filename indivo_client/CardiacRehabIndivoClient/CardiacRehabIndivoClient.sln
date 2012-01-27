@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardiacRehabIndivoClient", "CardiacRehabIndivoClient.csproj", "{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndivoClient", "..\IndivoClient\IndivoClient\IndivoClient.csproj", "{C760E18B-189B-447C-8142-93CBEBA9F4E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C760E18B-189B-447C-8142-93CBEBA9F4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C760E18B-189B-447C-8142-93CBEBA9F4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C760E18B-189B-447C-8142-93CBEBA9F4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C760E18B-189B-447C-8142-93CBEBA9F4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = CardiacRehabIndivoClient.csproj
+	EndGlobalSection
+EndGlobal

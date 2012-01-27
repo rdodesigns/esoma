@@ -1,0 +1,24 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Main.cs">
+    <Files>
+      <File FileName="Main.cs" Line="179" Column="28" />
+      <File FileName="App.config" Line="5" Column="21" />
+      <File FileName="PulseOX.cs" Line="44" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Solution Items" expanded="True" />
+          <Node name="DataProcessingServer" expanded="True">
+            <Node name="Main.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

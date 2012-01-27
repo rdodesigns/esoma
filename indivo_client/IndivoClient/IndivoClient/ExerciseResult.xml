@@ -1,0 +1,98 @@
+<ExerciseResults>
+	<ExerciseResult>
+		<Activity xmlns="http://indivo.org/vocab/xml/documents#">
+			<id>UID</id>
+			<type>Conditioning</type>
+			<name>Lateral Arm Raises</name>
+		</Activity>
+		<reportedBy>trainer/doctor name</reportedBy>
+		<reportedDate>Timestamp</reportedDate>
+		<startTime>Timestamp</startTime>
+		<duration>10</duration>
+		
+		<!-- 0 to infinite -->
+		<detail>
+			<unit type="http://indivo.org/codes/units#" value="sets" abbrev="sets">Sets</unit>
+			<value>3</value>
+		</detail>
+		<detail>
+			<unit type="http://indivo.org/codes/units#" value="repetitions" abbrev="reps">Repetitions</unit>
+			<value>10</value>
+		</detail>
+
+		<!-- 0 to infinite -->
+		<VitalSign xmlns="http://indivo.org/vocab/xml/documents#"> <!-- 0 to infinite -->
+			<name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="HR">heart rate</name>
+			<measuredBy>userName</measuredBy>
+		  	<dateMeasuredStart>Timestamp</dateMeasuredStart>
+		  	<result>
+		  		<value>110</value>
+		  		<unit type="http://codes.indivo.org/units/" value="31" abbrev="bpm">beats per minute</unit>
+			</result>
+		  	<site>right index finger</site>
+		  	<position>exercising</position>
+		</VitalSign>
+		<VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://codes.indivo.org/vitalsigns/" value="127" abbrev="BO">blood oxygen level</name>
+			<measuredBy>userName</measuredBy>
+		  	<dateMeasuredStart>Timestamp</dateMeasuredStart>
+		  	<result>
+		  		<value>97</value>
+		  		<unit type="http://codes.indivo.org/units/" value="37" abbrev="bo">percentage</unit>
+			</result>
+		  	<site>right index finger</site>
+		  	<position>exercising</position>
+		</VitalSign>
+	</ExerciseResult>
+	<ExerciseResult>
+		<Activity xmlns="http://indivo.org/vocab/xml/documents#">
+			<id>UID</id>
+			<type>Conditioning</type>
+			<name>Squats</name>
+			<met>4.5</met>
+		</Activity>
+		<reportedBy>username</reportedBy>
+		<reportedDate>Timestamp</reportedDate>
+		<startTime>Timestamp</startTime>
+		<duration>10</duration>
+		
+		<!-- 0 to infinite -->
+		<detail>
+			<unit type="http://indivo.org/codes/units#" value="sets" abbrev="sets">Sets</unit>
+			<value>3</value>
+		</detail>
+		<detail>
+			<unit type="http://indivo.org/codes/units#" value="repetitions" abbrev="reps">Repetitions</unit>
+			<value>10</value>
+		</detail>
+		<detail>
+			<unit type="http://indivo.org/codes/units#" value="weight" abbrev="weight">Weight</unit>
+			<value>15</value>
+		</detail>
+		
+		<!-- 0 to infinite -->
+		<VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://codes.indivo.org/vitalsigns/" value="123" abbrev="HR">heart rate</name>
+			<measuredBy>userName</measuredBy>
+		  	<dateMeasuredStart>Timestamp</dateMeasuredStart>
+		  	<result>
+		  		<value>110</value>
+		  		<unit type="http://codes.indivo.org/units/" value="31" abbrev="bpm">beats per minute</unit>
+			</result>
+		  	<site>right index finger</site>
+		  	<position>exercising</position>
+		</VitalSign>
+		<VitalSign xmlns="http://indivo.org/vocab/xml/documents#">
+			<name type="http://codes.indivo.org/vitalsigns/" value="127" abbrev="BO">blood oxygen level</name>
+			<measuredBy>userName</measuredBy>
+		  	<dateMeasuredStart>Timestamp</dateMeasuredStart>
+		  	<result>
+		  		<value>97</value>
+		  		<unit type="http://codes.indivo.org/units/" value="37" abbrev="bo">percentage</unit>
+			</result>
+		  	<site>right index finger</site>
+		  	<position>exercising</position>
+		</VitalSign>
+	</ExerciseResult>
+</ExerciseResults>
+

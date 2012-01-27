@@ -1,0 +1,74 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:indivo="http://indivo.org/vocab/xml/documents#" targetNamespace="http://indivo.org/vocab/xml/documents#" elementFormDefault="qualified">
+	<element name="ExerciseResult">
+		<complexType>
+			<sequence>
+				<element name="totalAdherenceEvaluation" type="string" minOccurs="1" maxOccurs="1" />
+				<element name="exerciseGroup">
+					<complexType>
+						<sequence>
+							<!-- Note: This may be replaced by the adherence object in final schema -->
+							<element name="sets" type="int" minOccurs="0" maxOccurs="1" />
+							
+							<!-- Note: This will be replaced by scheduled item in final schema -->
+							<element name="daysOfWeek" type="string" minOccurs="0" maxOccurs="1" />
+							<element name="exercise" minOccurs="1">
+								<complexType>
+									<sequence>
+										<!-- Note: This may be replaced by the adherence object in final schema -->
+										<element name="adherenceEvaluation" type="string" minOccurs="1" maxOccurs="1" />
+										
+										<!-- Note: This will be replaced by separate object in final schema -->
+										<element name="activity">
+											<complexType>
+												<sequence>
+													<element name="id" type="string" minOccurs="1" maxOccurs="1" />
+													<element name="type" type="string" minOccurs="1" maxOccurs="1" />
+													<element name="name" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="startTime" type="date" minOccurs="1" maxOccurs="1" />
+										<element name="duration" type="int" minOccurs="1" maxOccurs="1" />
+										<element name="sets" type="int" minOccurs="0" maxOccurs="1" />
+										<element name="repititions" type="int" minOccurs="0" maxOccurs="1" />
+										<element name="resistance" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="value" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="unitOfMeasurement" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="distance" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="value" type="int" minOccurs="1" maxOccurs="1" />
+													<element name="unitOfMeasurement" type="string" minOccurs="1" maxOccurs="1" />
+												</sequence>
+											</complexType>
+										</element>
+										<element name="additionalDetails" minOccurs="0" maxOccurs="1">
+											<complexType>
+												<sequence>
+													<element name="detail" minOccurs="0">
+														<complexType>
+															<sequence>
+																<element name="name" type="string" minOccurs="1" maxOccurs="1" />
+																<element name="value" type="int" minOccurs="1" maxOccurs="1" />
+																<element name="unitOfMeasurement" type="string" minOccurs="0" maxOccurs="1" />
+															</sequence>
+														</complexType>
+													</element>
+												</sequence>
+											</complexType>
+										</element>
+									</sequence>
+								</complexType>
+							</element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

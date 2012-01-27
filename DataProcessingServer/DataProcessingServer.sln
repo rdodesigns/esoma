@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessingServer", "DataProcessingServer.csproj", "{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A3059AA-F1A4-468D-9371-CF892ABC2B8C}"
+	ProjectSection(SolutionItems) = preProject
+		App.config = App.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}.Debug|x86.ActiveCfg = Debug|x86
+		{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}.Debug|x86.Build.0 = Debug|x86
+		{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}.Release|x86.ActiveCfg = Release|x86
+		{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = DataProcessingServer.csproj
+	EndGlobalSection
+EndGlobal

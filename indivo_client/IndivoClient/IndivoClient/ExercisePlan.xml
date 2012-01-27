@@ -1,0 +1,110 @@
+<ExercisePlan>
+	<exerciseGroup>
+	
+		<!-- optional. allows you to specify doing exercise in a series, then looping that series -->
+		<!-- when not present, it is presumed the exercises in the group will be done only once -->
+		<sets>
+			<minimumValue>2</minimumValue>
+			<maximumValue>4</maximumValue>
+		</sets>
+		
+		<!-- optional. allows you to specify that exercises are only performed on certain days of the week -->
+		<!-- days are given in a string w/ values of each char 1-7, where sunday is 1 and saturday is 7 -->
+		<daysOfWeek>246</daysOfWeek>
+		
+		<exercise>
+			<activity xmlns="http://indivo.org/vocab/xml/documents#">
+				<id>UID</id>
+				<type>Conditioning</type>
+				<name>Squats</name>
+				<met>4.5</met>
+			</activity>
+			<orderedBy>trainer/doctor name</orderedBy> <!-- optional -->
+			<orderDate>Timestamp</orderDate> <!-- optional -->
+			<startTime>Timestamp</startTime> <!-- optional -->
+			<duration>10</duration> <!-- optional -->
+			
+
+			<!-- these are optional, as they depend on the exercise 
+				 (distance running likely wouldnt need sets/reps
+				 while curls wouldnt measure distance, etc) -->
+			<sets>
+				<minimumValue>1</minimumValue>
+				<maximumValue>1</maximumValue>
+			</sets>
+			<repitions>
+				<minimumValue>10</minimumValue>
+				<maximumValue>15</maximumValue>
+			</repitions>
+			<resistance>
+				<unitOfMeasurement>pounds</unitOfMeasurement>
+				<minimumValue>225</minimumValue>
+				<maximumValue>265</maximumValue>
+			</resistance>
+			<distance>
+				<unitOfMeasurement>meters</unitOfMeasurement>
+				<minimumValue>200</minimumValue>
+				<maximumValue>400</maximumValue>
+			</distance>
+			
+			<!-- 0 to infinite. Use this to extend the object and store additional data points for a given exercise -->
+			<detail>
+				<unit type="http://indivo.org/codes/units#" value="extension value" abbrev="extension abbrev">Name</unit>
+				<value>100</value>
+			</detail>
+		</exercise>
+		<exercise>
+			<Activity xmlns="http://indivo.org/vocab/xml/documents#">
+				<id>UID</id>
+				<type>Conditioning</type>
+				<name>Bench Press</name>
+				<met>3.5</met>
+			</Activity>
+			<orderedBy>trainer/doctor name</orderedBy> <!-- optional -->
+			<orderDate>Timestamp</orderDate> <!-- optional -->
+			<startTime>Timestamp</startTime> <!-- optional -->
+			<duration>10</duration> <!-- optional -->
+			
+			<sets>
+				<minimumValue>1</minimumValue>
+				<maximumValue>1</maximumValue>
+			</sets>
+			<repitions>
+				<minimumValue>10</minimumValue>
+				<maximumValue>15</maximumValue>
+			</repitions>
+			<resistance>
+				<unitOfMeasurement>pounds</unitOfMeasurement>
+				<minimumValue>135</minimumValue>
+				<maximumValue>175</maximumValue>
+			</resistance>			
+		</exercise>
+	</exerciseGroup>
+	
+	<exerciseGroup>
+		<!-- this has no value for daysOfWeek or sets, so its assumed the group
+			 will be performed once, every day -->
+	
+		<exercise>
+			<Activity xmlns="http://indivo.org/vocab/xml/documents#">
+				<id>UID</id>
+				<type>Conditioning</type>
+				<name>Lateral Arm Raise</name>
+				<met>2.5</met>
+			</Activity>
+			<orderedBy>trainer/doctor name</orderedBy> <!-- optional -->
+			<orderDate>Timestamp</orderDate> <!-- optional -->
+			<startTime>Timestamp</startTime> <!-- optional -->
+			<duration>10</duration> <!-- optional -->
+			
+			<sets>
+				<minimumValue>2</minimumValue>
+				<maximumValue>4</maximumValue>
+			</sets>
+			<repitions>
+				<minimumValue>10</minimumValue>
+				<maximumValue>15</maximumValue>
+			</repitions>
+		</exercise>
+	</exerciseGroup>
+</ExercisePlan>

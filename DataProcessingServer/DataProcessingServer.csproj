@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4448E5D-4F2F-4B59-A58A-1C414D14FC9B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DataProcessingServer</RootNamespace>
+    <AssemblyName>DataProcessingServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="IndivoClient, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EsomaSharedDocuments\EsomaSharedDocuments\bin\Debug\IndivoClient.dll</HintPath>
+    </Reference>
+    <Reference Include="pulsoximeter_library, Version=1.0.4408.27842, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\pulsoximeter\pulsoximeter_library\pulsoximeter_library\bin\Release\pulsoximeter_library.dll</HintPath>
+    </Reference>
+    <Reference Include="EsomaTCP, Version=1.0.4408.32085, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\TCP_IP\EsomaTCP\bin\Debug\EsomaTCP.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic">
+    </Reference>
+    <Reference Include="System.Core">
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+    </Reference>
+    <Reference Include="EsomaSharedDocuments">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\EsomaSharedDocuments\EsomaSharedDocuments\bin\Debug\EsomaSharedDocuments.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PulseOX.cs" />
+    <Compile Include="Skeleton.cs" />
+    <Compile Include="ExerciseAdherence.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+</Project>

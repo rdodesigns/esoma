@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03BB994F-F2E3-4880-89B2-4A7CD388A3C4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CardiacRehabIndivoClient</RootNamespace>
+    <AssemblyName>CardiacRehabIndivoClient</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="EsomaMessageParser">
+      <HintPath>..\..\EsomaMessageParser\bin\Debug\EsomaMessageParser.dll</HintPath>
+    </Reference>
+    <Reference Include="EsomaTCP">
+      <HintPath>..\..\TCP_IP\EsomaTCP\bin\Debug\EsomaTCP.dll</HintPath>
+    </Reference>
+    <Reference Include="EsomaSharedDocuments">
+      <HintPath>..\..\EsomaSharedDocuments\EsomaSharedDocuments\bin\Debug\EsomaSharedDocuments.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DataRecorder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="DataRequestor.cs" />
+    <Compile Include="SerializationHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\IndivoClient\IndivoClient\IndivoClient.csproj">
+      <Project>{C760E18B-189B-447C-8142-93CBEBA9F4E7}</Project>
+      <Name>IndivoClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+</Project>
